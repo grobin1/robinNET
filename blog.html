@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body class="bg-gray-50 min-h-screen flex flex-col">
+    <!-- Header -->
+    <header class="bg-blue-600 text-black shadow-md">
+        <div class="container mx-auto px-4 py-4 md:px-20">
+            <div class="flex flex-col md:flex-row justify-between lg:justify-start lg:items-center items-end">
+                <h1 class="text-3xl sm:text-4xl font-bold mb-4 md:mb-0">RobinNET<i
+                        class="ms-3 lg:me-20 fa-solid fa-feather-pointed"></i>
+                </h1>
+                <nav class="mt-0 md:w-auto w-full">
+                    <ul class="flex flex-col w-full sm:flex-row space-y-2 sm:space-y-0 sm:space-x-6">
+                        <li>
+                            <a href="index.html"
+                                class="inline-flex items-center px-4 py-2 text-gray-800 bg-white rounded-md shadow-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-75 font-medium w-full justify-center">
+                                Home<i class="mx-3 fa-solid fa-house"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="blog.html"
+                                class="inline-flex items-center px-4 py-2 text-gray-800 bg-white rounded-md shadow-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-75 w-full justify-center">
+                                Blog<i class="mx-3 fa-solid fa-blog"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="goals.html"
+                                class="inline-flex items-center px-4 py-2 text-gray-800 bg-white rounded-md shadow-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-75 w-full justify-center">
+                                Goals<i class="mx-3 fa-solid fa-bullseye"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow container mx-auto px-4 py-8">
+        <h1 class="text-4xl font-bold text-blue-800 mb-8">Blog<i class="mx-3 fa-solid fa-blog"></i></h1>
+
+        <!-- Recent Entries Section -->
+        <!-- Keep this section below 3 higlighted articles -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold text-blue-700 mb-6">Recent Entries</h2>
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <div class="space-y-8">
+                    <!-- TODO: Rewrite this article -->
+                    <article>
+                        <h3 class="text-xl font-semibold mb-2">Essential Linux Commands for Beginners</h3>
+                        <p class="text-gray-600 mb-2">Posted on June 28, 2023</p>
+                        <p class="text-gray-700">A curated list of must-know Linux commands that every IT professional
+                            should have in their toolkit.</p>
+                        <a href="#linux-commands" class="text-blue-600 hover:underline mt-2 inline-block">Read more
+                            →</a>
+                    </article>
+                    <!-- TODO: Rewrite this article -->
+                    <article>
+                        <h3 class="text-xl font-semibold mb-2">The Importance of Documentation</h3>
+                        <p class="text-gray-600 mb-2">Posted on May 30, 2023</p>
+                        <p class="text-gray-700">Why keeping good documentation is crucial in IT and my personal system
+                            for maintaining it.</p>
+                        <a href="#documentation" class="text-blue-600 hover:underline mt-2 inline-block">Read more →</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- All Blog Entries Section -->
+        <section>
+            <h2 class="text-3xl font-bold text-blue-700 mb-6">All Blog Entries</h2>
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <div class="space-y-12">
+                    <article id="linux-commands">
+                        <h3 class="text-2xl font-semibold mb-2">Essential Linux Commands for Beginners</h3>
+                        <p class="text-gray-600 mb-4">Posted on June 28, 2023</p>
+                        <div class="text-gray-700 space-y-4">
+                            <p>As someone who came from a Windows background, Linux initially seemed intimidating. But I
+                                quickly learned that mastering just a few basic commands can get you surprisingly far.
+                                Here are my top 10 essential Linux commands:</p>
+                            <ol class="list-decimal pl-6 space-y-2">
+                                <li><strong>ls</strong> - List directory contents (add -l for details, -a for hidden
+                                    files)</li>
+                                <li><strong>cd</strong> - Change directory (cd .. to go up one level)</li>
+                                <li><strong>pwd</strong> - Print working directory (shows where you are)</li>
+                                <li><strong>mkdir</strong> - Make a new directory</li>
+                                <li><strong>rm</strong> - Remove files (use -r for directories, but be careful!)</li>
+                                <li><strong>cp</strong> - Copy files and directories</li>
+                                <li><strong>mv</strong> - Move or rename files</li>
+                                <li><strong>grep</strong> - Search text using patterns</li>
+                                <li><strong>chmod</strong> - Change file permissions</li>
+                                <li><strong>man</strong> - Display manual pages (your best friend!)</li>
+                            </ol>
+                            <p>The key is practice. I set up a Linux VM just to experiment with these commands daily.
+                                Now they're second nature!</p>
+                        </div>
+                    </article>
+                    <article id="documentation">
+                        <h3 class="text-2xl font-semibold mb-2">The Importance of Documentation</h3>
+                        <p class="text-gray-600 mb-4">Posted on May 30, 2023</p>
+                        <div class="text-gray-700 space-y-4">
+                            <p>Early in my IT journey, I underestimated documentation. Why write down what I just did
+                                when I remember it perfectly? Then I encountered my first "I know I fixed this before
+                                but can't remember how" moment.</p>
+                            <p>Now I maintain several types of documentation:</p>
+                            <p><strong>1. Personal Knowledge Base:</strong> Using Obsidian MD, I keep notes on
+                                solutions, commands, and concepts. I tag everything for easy searching.</p>
+                            <p><strong>2. Standard Operating Procedures:</strong> For repetitive tasks, I create
+                                step-by-step guides with screenshots. These save me hours when I need to perform the
+                                task again months later.</p>
+                            <p><strong>3. Project Logs:</strong> For each project, I maintain a changelog of what I did,
+                                why, and any issues encountered.</p>
+                            <p>The benefits have been enormous. Not only does it make my work more efficient, but it's
+                                also become a valuable resource I can share with colleagues. Documentation might not be
+                                glamorous, but it's one of the most professional habits an IT professional can develop.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto px-4 text-center">
+            <p><i class="mx-3 fa-solid fa-feather-pointed"></i>RobinNet</p>
+        </div>
+    </footer>
+</body>
+
+</html>
